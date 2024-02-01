@@ -29,7 +29,7 @@ const App = () => {
     try {
       const response = await fetch('http://localhost:8000/completions', options);
       const data = await response.json(); // Added await to properly resolve the promise
-      
+      console.log(data)
       // Ensure data.choices exists and has at least one entry before accessing
       if (data.choices && data.choices.length > 0 && data.choices[0].message) {
         
