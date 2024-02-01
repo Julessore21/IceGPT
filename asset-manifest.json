@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/IceGPT/static/css/main.71eb85b0.css",
+    "main.js": "/IceGPT/static/js/main.4eb64569.js",
+    "index.html": "/IceGPT/index.html",
+    "main.71eb85b0.css.map": "/IceGPT/static/css/main.71eb85b0.css.map",
+    "main.4eb64569.js.map": "/IceGPT/static/js/main.4eb64569.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71eb85b0.css",
+    "static/js/main.4eb64569.js"
+  ]
+}
