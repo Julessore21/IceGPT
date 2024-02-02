@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { SlArrowRightCircle } from "react-icons/sl";
 const App = () => {
 
   const [ value, setValue] = useState(null);
@@ -27,7 +28,7 @@ const App = () => {
       },
     }
     try {
-      const response = await fetch('https://julessore21.github.io/IceGPT/completions', options);
+      const response = await fetch('http://localhost:8000/completions', options);
       const data = await response.json(); // Added await to properly resolve the promise
       console.log(data)
       // Ensure data.choices exists and has at least one entry before accessing
@@ -94,7 +95,7 @@ const App = () => {
         <div className="bottom-section">
           <div className="input-container">
             <input value={value} onChange={(e) => setValue(e.target.value)}/>
-            <div id="submit" onClick={getMessages}>➢</div>
+            <div id="submit" onClick={getMessages}><SlArrowRightCircle /></div>
           </div>
           <p className="info">
 
